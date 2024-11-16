@@ -1,0 +1,103 @@
+* {
+    color: black;
+}
+
+.circle {
+    border: 2px solid #fab700;
+    border-radius: 68px;
+    display: inline-block;
+}
+
+.inner {
+    background-color: #fab700;
+    border-radius: 50px;
+    margin: 24px;
+    height: 90px;
+    width: 90px;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.count {
+    background-color: #f4f1ec;
+    padding: 2%;
+}
+
+.cot {
+    padding: 3%;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.fcount {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+.al:hover{
+    color: #dd8930;
+}
+
+.cardabout {
+    /* background-color: #ffffff; */
+    background-color: #fef8f8;
+    padding: 4%;
+    /* margin-top: 8%; */
+}
+
+.we {
+    background-color: #dd8930;
+}
+
+.we h3 {
+    color: white;
+    text-align: center;
+}
+
+.we p {
+    color: black;
+}
+
+.divp {
+    margin-right: 8%;
+}
+
+.btn-warning {
+    background-color: #c14735;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.logos {
+    /* background-color: #F2F4F8; */
+    background-color: #f9f5f3;
+    padding: 3%;
+}
+
+.cd {
+    border-left: 1px solid black;
+    padding-left: 3%;
+
+}
+
+.card {
+    box-shadow: 0px 12px 28px 0px rgba(0, 0, 0, 0.2), 0px 2px 4px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+.fa-solid {
+    padding: 2%;
+}
+
+.ids {
+    padding-right: 3%;
+}
+
+.p {
+    font-size: large;
+}

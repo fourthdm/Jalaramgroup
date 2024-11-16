@@ -1,0 +1,30 @@
+.img {
+    width: 100%;
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 25%;
+    border: 3px solid #f49622;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+img:hover {
+    scale: 1.1;
+}
+
+h2 {
+    color: #ea5f2c;
+}
+
+@media(max-width:439px) {
+
+    img:hover {
+        scale: 1.02;
+    }
+}
+
+.modal-content {
+    border-color: #ea5f2c;
+}

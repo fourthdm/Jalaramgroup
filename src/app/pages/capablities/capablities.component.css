@@ -1,0 +1,43 @@
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: #eb8d35; */
+    background-color: #c14835e2;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    transition: .5s ease;
+}
+
+.card:hover .overlay {
+    height: 70%;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+.card-body{
+    padding: 0%;
+}
+
+h1{
+    color: #ea5f2c;
+}
+
+.card{
+    border: 2px solid #ea5f2c;
+
+}
