@@ -6,27 +6,34 @@
         <div class="row">
             <h2>Contact Us</h2>
             <div class="col-md-6">
-                <form>
-                    <div class="col-md-1"></div>
+
+                <form class="contact-form" (submit)="sendEmail($event)" class="row g-3 needs-validation" novalidate>
+                    <!-- <div class="col-md-1"></div> -->
                     <div class="col-md-10">
                         <label for="Name">Name:</label>
-                        <input type="text" class="form-control" id="Name" formControlName="Name"
-                            placeholder="Enter Your Name" required>
-                    </div> 
+                        <input type="text" name="name" class="form-control" id="Name" value=""
+                            placeholder="Enter Your Name " required>
+                        <div class="valid-feedback">
+                            Your Name
+                        </div>
+                    </div>
                     <br>
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <label for="Email">Email ID:</label>
-                        <input type="email" class="form-control" id="Email" formControlName="Email"
-                            placeholder="Enter Your Email Address" required>
+                        <input type="email" name="email" class="form-control" id="EmailAddress"
+                            placeholder="Enter Your Email Address.." required>
                     </div>
 
                     <br>
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <label for="Mobileno">Contact No.:</label>
-                        <input type="text" class="form-control" id="Mobileno" formControlName="Mobileno"
+                        <input type="number" name="phoneno" class="form-control" id="MobileNo" value=""
                             placeholder="Enter your Mobile number" required>
+                        <div class="valid-feedback">
+                            Your number
+                        </div>
                     </div>
                     <div class="col-md-1"></div>
                     <br>
@@ -34,18 +41,20 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <label for="Mobileno">Message.:</label>
-                        <textarea type="text" class="form-control" id="Mobileno" formControlName="Mobileno"
-                            placeholder="Enter your Mobile number" required></textarea>
+                        <textarea type="text" name="message" class="form-control" id="Message" placeholder="Message"
+                            required>
+                        </textarea>
                     </div>
                     <div class="col-md-1"></div>
                     <br>
 
                     <div class="col-md-1"></div>
                     <div class="col-md-10" style="text-align: center;">
-                        <button class="btn btn-success" type="submit">Submit Now</button>
+                        <button class="btn btn-success" type="submit" value="Send">Submit Now</button>
                     </div>
                     <br><br>
                 </form>
+                
             </div>
             <div class="col-md-6">
                 <div class="row">

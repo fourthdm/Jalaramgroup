@@ -1,11 +1,13 @@
 
 
 h3 {
-    color: #dd8930;
+    color: #fab700;
 }
 
 h5 {
     color: #d26225;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 h1 {

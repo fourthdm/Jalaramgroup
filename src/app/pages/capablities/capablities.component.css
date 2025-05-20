@@ -29,15 +29,38 @@
     transform: translate(-50%, -10%);
 }
 
-.card-body{
+.card-body {
     padding: 0%;
 }
 
-h1{
+h1 {
     color: #ea5f2c;
 }
 
-.card{
+.card {
     border: 2px solid #ea5f2c;
 
+}
+
+img {
+    width: 100%;
+}
+
+
+.para {
+    font-size: larger;
+    color: #c14835e2;
+}
+
+.img {
+    width: 100%;
+    border: 3px solid #ea5f2c;
+    cursor: pointer;
+    /* cursor: move; */
+    /* cursor: url('/assets/magnifier.png'),auto;     */
+}
+
+h5 {
+    text-align: center;
+    color: #ea5f2c;
 }

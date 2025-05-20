@@ -1,6 +1,6 @@
-* {
+/* * {
     color: black;
-}
+} */
 
 .main {
 
@@ -37,10 +37,15 @@
 li:hover {
     color: #de7d22;
     font-size: large;
+    font-weight: bold;
 }
 
 h5 {
     font-size: 25px;
     font-weight: 600;
-    color: #dd8930;
+    color: #fcb900;
+}
+
+.imgs {
+    width: 100%;
 }

@@ -4,6 +4,8 @@
     border-top-left-radius: 25%;
     border: 3px solid #f49622;
     cursor: pointer;
+    /* cursor: move; */
+    /* cursor: url('/assets/magnifier.png'),auto;     */
 }
 
 img {
@@ -19,7 +21,6 @@ h2 {
 }
 
 @media(max-width:439px) {
-
     img:hover {
         scale: 1.02;
     }

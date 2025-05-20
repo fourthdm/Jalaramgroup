@@ -1,0 +1,31 @@
+ul {
+    text-align: center;
+}
+
+.bttons {
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+}
+
+.dropup-center {
+    position: fixed;
+    right: 5px;
+    bottom: 50px;
+}
+
+.dropdown-menu {
+    background: none;
+}
+
+.fa-square-caret-up {
+    color: #fcb900;
+}
+
+.fa-whatsapp {
+    color: #25D366 ;
+}
+
+.fa-circle-half-stroke{
+    cursor: pointer;
+}

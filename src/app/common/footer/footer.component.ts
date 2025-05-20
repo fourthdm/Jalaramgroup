@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -6,13 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-  scrolltop = document.getElementById("scrolltop");
-  rootelement = document.documentElement;
+  constructor(private router: Router) {}
 
-  scroll() {
-    this.rootelement.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
+  navigateAndScroll(route: string) {
+    this.router.navigate([route]).then(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
 }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
+<!-- <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
     <div class="container">
         <a class="navbar-brand" href=""><img src="/assets/logo.png" height="65" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -8,6 +8,46 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ncenter" (click)="closeNavbar()">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" [routerLink]="['/home']">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" (click)="scroll()" [routerLink]="['/about']">About </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="scroll()" [routerLink]="['/business']">Business </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" (click)="scroll()" [routerLink]="['/products']">Products</a>
+                </li>          
+
+                <li class="nav-item">
+                    <a class="nav-link" (click)="scroll()" [routerLink]="['/capabilities']"> Capabilities</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" (click)="scroll()" [routerLink]="['/contactus']">Contact Us </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav> -->
+
+
+<!-- <nav class="navbar navbar-expand-lg fixed-top" style="padding: 0px;">
+    
+    <div class="container">
+        <button data-mdb-button-init class="navbar-toggler px-0" type="button" data-mdb-collapse-init
+            data-mdb-target="#navbarExampleOnHover" aria-controls="navbarExampleOnHover" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarExampleOnHover">
+          
+            <ul class="navbar-nav me-auto ps-lg-0" style="padding-left: 0.15rem">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" [routerLink]="['/home']">Home</a>
                 </li>
@@ -27,7 +67,115 @@
                 <li class="nav-item">
                     <a class="nav-link" (click)="scroll()" [routerLink]="['/contactus']">Contact Us </a>
                 </li>
+
+                <li class="nav-item dropdown dropdown-hover position-static">
+                    <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                              border-top-right-radius: 0;">
+
+                        <div class="container">
+                            <div class="row my-4">
+                                <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                    <h1>  VEER ENTERPRISES</h1>
+                                </div>
+                                <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                    MAYUR ENTERPRISES
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
-</nav><br>
+</nav>
+ -->
+
+
+
+<nav [ngClass]="{ 'navbar-scrolled': isScrolled }" class="navbar navbar-expand-lg fixed-top"
+    style="background-color: white;">
+    <div class="container">
+        <a class="navbar-brand" href="/" aria-label="Read more about"><img src="/assets/logo.png" height="65"
+                alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ncenter" (click)="closeNavbar()">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" [routerLink]="['/home']">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" [routerLink]="['/about']">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" [routerLink]="['/products']">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="scroll()" [routerLink]="['/capabilities']"> Capabilities</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/contactus']">Contact Us</a>
+                </li>
+                <!-- theme-toggle.component.html -->
+                              <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Our Companies
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="container">
+                            <div class="row my-4">
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-4"
+                                        data-mdb-ripple-color="light">
+                                        <a href="https://riyaenterprises.tools/" target="_blank"
+                                            aria-label="Read more about"><img src="/assets/jriyalogo.png"
+                                                class="img-fluid" /> </a>
+                                    </div>
+                                    <a href="https://riyaenterprises.tools/" target="_blank"
+                                        aria-label="Read more about" class="text-body">
+                                        <h5>Riya Enterprises</h5>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-4"
+                                        data-mdb-ripple-color="light">
+                                        <a href="https://riyaenterprises.tools" target="_blank"
+                                            aria-label="Read more about"> <img src="/assets/mayurlogo.png"
+                                                class="img-fluid" /></a>
+                                    </div>
+                                    <a href="https://riyaenterprises.tools/" target="_blank"
+                                        aria-label="Read more about" class="text-body">
+                                        <h5>Mayur Enterprises</h5>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-4"
+                                        data-mdb-ripple-color="light">
+                                        <a href="https://riyaenterprises.tools" target="_blank"
+                                            aria-label="Read more about">
+                                            <img src="/assets/veerlogo.png" class="img-fluid" /></a>
+                                    </div>
+                                    <a href="https://riyaenterprises.tools/" target="_blank" class="text-body"
+                                        aria-label="Read more about">
+                                        <h5>Veer Enterprises</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
+
+            </ul>
+        </div>
+    </div>
+</nav>
